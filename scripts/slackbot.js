@@ -10,15 +10,17 @@ Only responds to /puppy time/
 
 */
 
-  robot.hear(/badger/, function (msg) {
-      msg.send("Badgers? BADGERS? WE DON\'T NEED NO STINKIN BADGERS");
+  robot.hear(/treat/, function (msg) {
+      msg.send('https://media.giphy.com/media/3o6Zt7x8a6UtRs4JgI/giphy.gif');
     });
 
   robot.respond(/talk!/, function (msg) {
-        msg.send("WOOF WOOF");
+        msg.send('WOOF WOOF');
       });
 
-  robot.respond(/Who are you?!/, function (res) {
-            msg.send('WOOF WOOF');
+  robot.respond(/Who are you?|Who is a good boy?|Who's a good boy?/, function (msg) {
+            msg.reply('I am a good doggo');
           });
+
+  // where can i get a doge? google map shelters based on computer location
 };
